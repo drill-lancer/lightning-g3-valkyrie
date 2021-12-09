@@ -1,0 +1,28 @@
+.page-header {
+	display: none;
+}
+
+.global-nav,
+.header_scrolled .global-nav {
+	background-color: var(--vk-color-primary);
+	border-top: 2px solid var(--vk-color-primary);
+}
+
+.global-nav--layout--penetration .global-nav-list > li,
+.global-nav--layout--penetration .global-nav-list > li:first-child {
+    border-left: 1px solid rgba(255,255,255,.2);
+}
+
+.global-nav--layout--penetration .global-nav-list > li:last-child {
+    border-right: 1px solid rgba(255,255,255,.2);
+}
+
+.global-nav--layout--penetration .global-nav-list > li:hover,
+.global-nav--layout--penetration .global-nav-list > li[class*=current] {
+    transition: all .5s ease-out;
+    background-color: rgba(255,255,255,.05);
+}
+
+.global-nav--layout--penetration .global-nav-list > li > a {
+	color: #fff;
+}
