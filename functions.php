@@ -4,16 +4,10 @@
  *
  * スキン固有のコードを書く場所
  *
- * @package lightning-skin-sample
- *
- * ここにPHPのコードを書いてください
+ * @package Lightning G3 Valkyrie
  */
 
-/**
- * ページヘッダーを無効化
- */
-function ltg3_valkyrie_disable_page_header( $page_header_title_html ) {
-	$page_header_title_html = '';
-	return $page_header_title_html;
-}
-add_filter( 'lightning_page_header_title_html', 'ltg3_valkyrie_disable_page_header' );
+$include_path = plugin_dir_path( __FILE__ ) . '/include/';
+require_once $include_path . 'archive.php';
+require_once $include_path . 'single.php';
+

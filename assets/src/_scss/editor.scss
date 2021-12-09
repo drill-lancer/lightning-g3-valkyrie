@@ -4,3 +4,10 @@
 * 編集画面用CSS
 */
 
+// for classic editor
+@import "common";
+
+// for gutenberg
+.editor-styles-wrapper{
+    @import "common";
+}
