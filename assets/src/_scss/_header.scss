@@ -2,10 +2,17 @@
 	display: none;
 }
 
-.global-nav,
-.header_scrolled .global-nav {
+.global-nav.global-nav--layout--penetration,
+.header_scrolled .global-nav.global-nav--scrolled--nav-container {
 	background-color: var(--vk-color-primary);
 	border-top: 2px solid var(--vk-color-primary);
+}
+
+.header_scrolled .global-nav.global-nav--scrolled--nav-container {
+    width: auto;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    clear: both;
 }
 
 .global-nav--layout--penetration .global-nav-list > li,
