@@ -1,7 +1,7 @@
 <?php
 /**
  * 投稿詳細ページの HTML を変更
- * 
+ *
  * @package Lightning G3 Valkyrie
  */
 
