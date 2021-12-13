@@ -2,11 +2,9 @@
 	color: #999;
     background-color: #191919;
 	border-top: 3px solid var(--vk-color-primary);
-	font-size: var(--vk-size-text);
 	.widget-title.sub-section-title {
 		padding: 12px 0 10px;
 		margin-top: 0;
-    	font-size: 18px;
 	}
 }
 
@@ -18,7 +16,6 @@
 
 .footer-nav-list > li {
 	margin-bottom: 0;
-    font-size: 14px;
 }
 
 .footer-nav-list > li > a {
@@ -51,10 +48,4 @@
 .site-footer-content {
     position: relative;
     padding-top: 2em;
-}
-
-.site-footer-copyright p {
-	font-size: 12px;
-    margin: 0 15px 5px;
-	line-height: 1.7;
 }

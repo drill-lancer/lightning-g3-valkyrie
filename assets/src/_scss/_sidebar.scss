@@ -7,8 +7,10 @@
 	margin-bottom: 20px;
 }
 
-.sub-section .widget-title.sub-section-title,
-.add-section .widget-title.sub-section-title{
+.sub-section .sub-section-title,
+.add-section .sub-section-title,
+.sub-section .widget-title,
+.sub-section .widget-title {
 	background-color: var(--vk-color-primary);
     color: #fff;
 	margin: -10px -10px 10px -10px;

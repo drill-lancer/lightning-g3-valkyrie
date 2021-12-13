@@ -6,6 +6,24 @@
     margin-bottom: 2em;
 }
 
+.comments-outer {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: solid 1px rgba(0,0,0,.1);
+    margin-bottom: 2em;
+}
+
+.comments-header {
+	background-color: var(--vk-color-primary);
+	color: #fff;
+	margin: -10px -20px 10px -20px;
+    padding: 10px 20px;
+}
+
+.comments-area {
+	margin-bottom: 0;
+}
+
 .archive-header,
 .entry-header {
 	background-color: var(--vk-color-primary);

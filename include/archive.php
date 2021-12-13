@@ -9,7 +9,7 @@
  * アーカイブに外枠を追加（上部）
  */
 function ltg3_valkyrie_add_main_section_prepend() {
-	if ( is_home() || is_archive() || is_search() || is_404() ) {
+	if ( is_home() && ! is_front_page() || is_archive() || is_search() || is_404() ) {
 		$archive_header_html  =  '<div class="archive-outer">';
 		$archive_title        = get_the_archive_title();
 		$archive_header_html .= '<header class="archive-header"><h1 class="archive-header-title">' . $archive_title . '</h1></header>';
@@ -46,7 +46,7 @@ add_filter( 'lightning_archive_description', 'ltg3_valkyrie_change_archive_descr
  * アーカイブに外枠を追加（下部）
  */
 function ltg3_valkyrie_add_main_section_append() {
-	if ( is_home() || is_archive() || is_search() || is_404() ) {
+	if ( is_home() && ! is_front_page() || is_archive() || is_search() || is_404() ) {
 		echo '</div>';
 	}
 }

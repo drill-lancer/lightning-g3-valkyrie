@@ -10,4 +10,4 @@
 $include_path = plugin_dir_path( __FILE__ ) . '/include/';
 require_once $include_path . 'archive.php';
 require_once $include_path . 'single.php';
-
+require_once $include_path . 'customizer.php';
