@@ -7,6 +7,8 @@
  * Author URI: https://www.drill-lancer.com
  * Text Domain: lightning-g3-valkyrie
  * Domain Path: /languages
+ * Requires at least: 5.7
+ * Requires PHP: 7.3
  * Version: 1.0.0
  *
  * @package Lightning G3 Valkyrie
@@ -26,7 +28,7 @@ $my_update_checker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__,
 	'lightning-g3-valkyrie'
 );
-$my_update_checker->setBranch( 'master' );
+$my_update_checker->getVcsApi()->enableReleaseAssets();
 
 // is_plugin_active の準備.
 require_once ABSPATH . 'wp-admin/includes/plugin.php';

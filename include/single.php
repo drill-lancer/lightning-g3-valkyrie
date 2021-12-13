@@ -6,7 +6,7 @@
  */
 
 /**
- * 
+ * 記事本文外側のクラス名を変更
  */
 function ltg3_valkyrie_article_outer_class( $article_outer_class ) {
 	$article_outer_class = 'article-outer';
