@@ -42,6 +42,8 @@ if ( 'lightning' !== $current_theme ) {
 	return;
 }
 
+load_plugin_textdomain( 'lightning-g3-valkyrie', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
 /**
  * Undocumented function
  *

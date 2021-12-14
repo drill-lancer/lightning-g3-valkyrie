@@ -10,9 +10,21 @@
  */
 function ltg3_valkyrie_add_main_section_prepend() {
 	if ( is_home() && ! is_front_page() || is_archive() || is_search() || is_404() ) {
+		$title = '';
+		if ( is_home() && ! is_front_page() || is_archive() ) {
+			$title = get_the_archive_title();
+		} elseif ( is_search() ) {
+			if ( ! empty( get_search_query() ) ) {
+				$title = sprintf( __( 'Search Results for : %s', 'lightning-g3-valkyrie' ), get_search_query() );
+			} else {
+				$title = __( 'Search Results', 'lightning-g3-valkyrie' );
+			}
+		} elseif ( is_404() ) {
+			$title = __( 'Not found', 'lightning-g3-valkyrie' );
+		}
+
 		$archive_header_html  =  '<div class="archive-outer">';
-		$archive_title        = get_the_archive_title();
-		$archive_header_html .= '<header class="archive-header"><h1 class="archive-header-title">' . $archive_title . '</h1></header>';
+		$archive_header_html .= '<header class="archive-header"><h1 class="archive-header-title">' . $title . '</h1></header>';
 		if ( is_category() || is_tax() || is_tag() ) {
 			$archive_description = term_description();
 			if ( ! empty( $archive_description ) ) {
