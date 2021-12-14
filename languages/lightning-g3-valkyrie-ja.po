@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightning G3 Valkyrie\n"
-"POT-Creation-Date: 2021-12-14 11:28+0900\n"
-"PO-Revision-Date: 2021-12-14 11:28+0900\n"
+"POT-Creation-Date: 2021-12-14 13:19+0900\n"
+"PO-Revision-Date: 2021-12-14 13:23+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: lightning-g3-valkyrie.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: vendor\n"
@@ -40,18 +40,31 @@ msgstr "ページが見つかりません"
 msgid "Comments"
 msgstr "コメント"
 
-#: lightning-g3-valkyrie.php:58
+#: lightning-g3-valkyrie.php:60
 msgid "Valkyrie"
 msgstr "Valkyrie"
 
 #. Plugin Name of the plugin/theme
-#. Description of the plugin/theme
 msgid "Lightning G3 Valkyrie"
 msgstr "Lightning G3 Valkyrie"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/drill-lancer/lightning-g3-valkyrie"
 msgstr "https://github.com/drill-lancer/lightning-g3-valkyrie"
+
+#. Description of the plugin/theme
+msgid ""
+"It is a plugin to add the extension skin \"Valkyrie\" dedicated to the "
+"WordPress theme \"Lightning\" and the Pro version plugin \"Lightning G3 Pro "
+"Unit\". After activating the theme \"Lightning\" and the Pro version plug-in "
+"\"Lightning G3 Pro Unit\", you will be able to select \"Valkyrie\" from the "
+"pull-down menu of \"Customize> Lightning Design Settings> Design Skins\"."
+msgstr ""
+"WordPressテーマ「Lightning」とPro版プラグイン「Lightning G3 Pro Unit」に専用"
+"の拡張スキン「Valkyrie」を追加するプラグインです。テーマ「Lightning」とPro版"
+"プラグイン「Lightning G3 Pro Unit」を有効化した後、「カスタマイズ＞Lightning"
+"デザイン設定＞デザインスキン」のプルダウンメニューから「Valkyrie」を選択でき"
+"るようになります。"
 
 #. Author of the plugin/theme
 msgid "DRILL LANCER"

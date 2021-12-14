@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Lightning G3 Valkyrie
  * Plugin URI: https://github.com/drill-lancer/lightning-g3-valkyrie
- * Description: Lightning G3 Valkyrie
+ * Description: It is a plugin to add the extension skin "Valkyrie" dedicated to the WordPress theme "Lightning" and the Pro version plugin "Lightning G3 Pro Unit". After activating the theme "Lightning" and the Pro version plug-in "Lightning G3 Pro Unit", you will be able to select "Valkyrie" from the pull-down menu of "Customize> Lightning Design Settings> Design Skins".
  * Author: DRILL LANCER
  * Author URI: https://www.drill-lancer.com
  * Text Domain: lightning-g3-valkyrie
@@ -38,7 +38,7 @@ $current_theme = get_template();
 $generation    = get_option( 'lightning_theme_generation' );
 $use_pro_unit  = is_plugin_active( 'lightning-g3-pro-unit/lightning-g3-pro-unit.php' );
 
-if ( 'lightning' !== $current_theme ) {
+if ( 'lightning' !== $current_theme || 'g3' !== $generation || false === $use_pro_unit ) {
 	return;
 }
 
