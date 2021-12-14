@@ -25,7 +25,10 @@ jobs:
         node-version: "${{ steps.nodenv.outputs.NODEVERSION }}"
     - name: Install Node Scripts
       run: npm install
-    - run: echo "DIST_VERSION=$(echo ${{ github.ref }} | sed -E 's/^refs\/tags\/v?(.*)$/\1/')" >> $GITHUB_ENV
+    - name: Set Version
+      run: echo "DIST_VERSION=$(echo ${{ github.ref }} | sed -E 's/^refs\/tags\/v?(.*)$/\1/')" >> $GITHUB_ENV
+    - name: Build
+      run: npm run build
     - name: Make Distribution
       run: |
         npm run dist
